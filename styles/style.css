@@ -70,7 +70,6 @@ img.logo {
 
 .register-button {
     background-color: #fff;
-    color: darkmagenta;
     padding: 0.85rem 5.85rem;
     box-shadow: 0rem 0.1rem 0.5rem #0000004d;
     border-radius: 2rem;
@@ -81,6 +80,7 @@ img.logo {
 
 .register-button a {
     text-decoration: none;
+    color: darkmagenta;
 }
 
 .register-button:hover {
