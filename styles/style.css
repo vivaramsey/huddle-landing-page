@@ -69,12 +69,12 @@ img.logo {
 }
 
 .register-button {
+    background-color: #fff;
+    color: darkmagenta;
+    padding: 0.85rem 5.85rem;
+    box-shadow: 0rem 0.1rem 0.5rem #0000004d;
+    border-radius: 2rem;
     cursor: pointer;
-    padding: 14px 20px;
-    border: 1px solid white;
-    border-radius: 30px;
-    margin: 20px auto;
-    margin-bottom: 90px;
     width: 251px;
     transition: all 0.3s ease-in-out;
 }
@@ -85,7 +85,6 @@ img.logo {
 
 .register-button:hover {
     background-color: var(--soft-magenta);
-    border: 1px solid var(--soft-magenta);
 }
 
 footer {
