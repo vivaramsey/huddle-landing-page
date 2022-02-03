@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open sans", sans-serif;
+    background-image: url(../images/bg-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-size: contain;
+    height: 100vh;
+}
+
+.logo-container {
+    padding: 20px;
+    margin-left: 5px;
+}
+
+
+img.logo {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.illustration {
+    margin: 45px;
+    width: 70%;
+}
+
+.info {
+    margin: 0 auto;
+}
+
+
+.heading {
+    font-family: popins, sans-serif;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 15px;
+    text-transform: capitalize;
+}
+
+
+.info p {
+    font-weight: 400;
+    color: white;
+    font-family: "Open sans", sans-serif;
+    padding: 15px;
+}
+
+.register-button {
+    cursor: pointer;
+    padding: 14px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 20px auto;
+    margin-bottom: 90px;
+    width: 251px;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-button a {
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background-color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-item {
+    color: white;
+    border: 2px solid white;
+    padding: 11px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.3sec ease-in-out;
+}
+
+.social-item:hover {
+    color: var(--soft-magenta);
+    border: 2px solid var(--soft-magenta);
+    text-decoration: none;
+}
+
+.attribution {
+    margin: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: var(--soft-magenta);
+    text-decoration: none;
+    transition: 30ms ease-in-out;
+}
+
+.attribution a:hover,
+a:focus {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+@media (min-width: 935px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: unset;
+    }
+
+    .info {
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .illustration {
+        width: 50%;
+    }
+
+    footer {
+        float: right;
+        margin-top: -4rem;
+    }
+
+    .socials {
+        margin-right: -4rem;
+    }
+}
+
+@media (max-width: 935px) and (min-width:500px) {
+    body {
+        background-size: cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .illustration {
+        width: 80%;
+    }
+
+    .info {
+        max-width: unset;
+    }
+}
