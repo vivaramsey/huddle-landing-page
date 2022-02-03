@@ -168,6 +168,9 @@ a:focus {
     .socials {
         margin-right: -4rem;
     }
+    .register-button {
+        margin: 0;
+}
 }
 
 @media (max-width: 935px) and (min-width:500px) {
